@@ -15,8 +15,7 @@ app.get("/", (_, response) => {
 });
 
 app.get("/books", async (request, response) => {
-  //request.query is an object, empty by default, but has properties if we add them to the URL
-  //find() accepts an obeject and filters by any properties it has in it
+ 
   const books = await Book.find(request.query);
   response.json(books);
 });
