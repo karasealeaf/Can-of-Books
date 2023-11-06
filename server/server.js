@@ -8,29 +8,7 @@ const mongoose = require("mongoose");
 
 const Book = require("./models/book");
 
-mongoose.connect(process.env.DATABASE_URL);
-
-/*const books = [
-  {
-    title: "Paddington 2",
-    author: "Nick Cage",
-    year: 1990,
-    imgURL: "",
-    summary: "",
-  },
-  {
-    title: "How to kill a mocking bird",
-    author: "Kara Sealeaf",
-    year: 1990,
-    imgURL: "",
-  },
-  {
-    title: "",
-    author: "",
-    year: 1990,
-    imgURL: "",
-  },
-];*/
+mongoose.connect(process.env.MONGODB_STRING);
 
 app.get("/", (_, response) => {
   response.json("You're looking at my root route. Roude.");

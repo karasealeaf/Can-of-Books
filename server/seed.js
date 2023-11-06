@@ -2,11 +2,10 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const Book = require("./models/book");
 
-// connect to our database
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.MONGODB_STRING);
 
 async function seed() {
-  await Book.create(
+  await Book.create([
     {
       title: "Lord of the rings",
       description: "Funny little monsters",
@@ -21,8 +20,8 @@ async function seed() {
       title: "The Dictionary",
       description: "A lot of words",
       status: "Unread",
-    }
-  );
+    },
+  ]);
   console.log("book created");
 
   mongoose.disconnect();
