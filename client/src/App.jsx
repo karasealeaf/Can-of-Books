@@ -10,7 +10,7 @@ function App() {
   }, []);
 
   async function getBooks() {
-    const API = `http://localhost:8080/books`;
+    const API = `http://https://can-of-books-kinmuorva-kara-sealeafs-projects.vercel.app//books`;
     const res = await axios.get(API);
     setBooks(res.data);
   }
