@@ -6,7 +6,7 @@ app.use(cors());
 const PORT = 8080;
 const mongoose = require("mongoose");
 
-const Book = require("./models/books");
+const Book = require("./models/book");
 
 mongoose.connect(process.env.DATABASE_URL);
 
