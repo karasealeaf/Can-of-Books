@@ -26,5 +26,5 @@ async function seed() {
 
   mongoose.disconnect();
 }
-
+seed();
 // On mongodb - click database - browse colletions - delete "drop the collection books" - the word books is a pluralised version on book.js. The word test comes from our .env file.
