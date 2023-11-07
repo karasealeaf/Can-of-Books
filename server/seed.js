@@ -7,19 +7,21 @@ mongoose.connect(process.env.MONGODB_STRING);
 async function seed() {
   await Book.create([
     {
-      title: "Lord of the rings",
+      title: "Lord of the Rings",
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1400/1*9rk5NGrZE7cPNTOPs3YxKg.jpeg",
       description: "Funny little monsters",
-      status: "Read",
+      status: true,
     },
     {
-      title: "The bible",
+      title: "The Bible",
       description: "God stuff",
-      status: "Unread",
+      status: false,
     },
     {
       title: "The Dictionary",
       description: "A lot of words",
-      status: "Unread",
+      status: true,
     },
   ]);
   console.log("book created");
