@@ -2,7 +2,7 @@
 
 **Author**: Kara Sealeaf, Sam Draper, Cordelia Snape, Andrea Vandyck
 
-**Version**: 1.0.0
+**Version**: 1.0.2
 
 ## Overview
 
@@ -19,6 +19,7 @@
 ## Change Log
 
 06-11-2023 15:53pm - Application is functional.
+07-11-2023 15:55pm - User can now add and delete mvies from the database.
 
 ## Estimates
 
