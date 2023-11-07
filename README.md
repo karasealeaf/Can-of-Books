@@ -1,6 +1,7 @@
 # Can of Books
 
 **Author**: Kara Sealeaf, Sam Draper, Cordelia Snape
+
 **Version**: 1.0.0
 
 ## Overview
