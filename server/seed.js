@@ -9,21 +9,21 @@ async function seed() {
     {
       title: "Lord of the Rings",
       description: "Funny little monsters",
-      imageURL:
+      imgURL:
         "https://miro.medium.com/v2/resize:fit:1400/1*9rk5NGrZE7cPNTOPs3YxKg.jpeg",
       status: true,
     },
     {
       title: "The Bible",
       description: "God stuff",
-      imageURL:
+      imgURL:
         "https://miro.medium.com/v2/resize:fit:1400/1*9rk5NGrZE7cPNTOPs3YxKg.jpeg",
       status: false,
     },
     {
       title: "The Dictionary",
       description: "A lot of words",
-      imageURL:
+      imgURL:
         "https://miro.medium.com/v2/resize:fit:1400/1*9rk5NGrZE7cPNTOPs3YxKg.jpeg",
       status: true,
     },

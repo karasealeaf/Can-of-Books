@@ -23,6 +23,7 @@ export default function Book() {
       <div key={book._id}>
         <h2>{book.title}</h2>
         <img src={book.imgURL} />
+        <p>{book.description}</p>
         {book.status ? <p>yes</p> : <p>no</p>}
         {book.title && <Form book={book} setBook={setBook} />}
       </div>
