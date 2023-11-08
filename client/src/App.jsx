@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import axios from "axios";
-import Form from "./components/Form";
+import Home from "./pages/Home";
+import Book from "./pages/Book";
+import Header from "./components/Header";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -28,21 +31,16 @@ function App() {
   }
 
   return (
-    <>
-      <h2>Books</h2>
-      <p>The ultimate book database</p>
-      {books.map((book) => {
-        return (
-          <div key={book._id}>
-            <h2>{book.title}</h2>
-            <img src={book.imgURL} />
-            {book.status ? <p>yes</p> : <p>no</p>}
-            <button onClick={() => deleteBook(book._id)}>Delete Book</button>
-          </div>
-        );
-      })}
-      <Form books={books} setBooks={setBooks} />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home books={books} deleteBook={deleteBook} setBooks={setBooks} />}
+        />
+        <Route path="/book/:id" element={<Book />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
