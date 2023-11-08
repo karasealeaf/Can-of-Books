@@ -2,7 +2,7 @@
 
 **Author**: Kara Sealeaf, Sam Draper, Cordelia Snape, Andrea Vandyck
 
-**Version**: 1.0.2
+**Version**: 1.1.0
 
 ## Overview
 
@@ -19,11 +19,12 @@
 ## Change Log
 
 06-11-2023 15:53pm - Application is functional.
-07-11-2023 15:55pm - User can now add and delete mvies from the database.
 
-## Estimates
+07-11-2023 15:55pm - User can now add and delete books from the database.
 
-<!-- See below -->
+08-11-2023 15:30pm - User can now update their book, and access pages displaying individual books.
+
+08-11-2023 15:58pm - Some CSS has been added for better user experience.
 
 ## Credit and Collaborations
 
