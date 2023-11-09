@@ -24,7 +24,7 @@ export default function Book() {
         <h2>{book.title}</h2>
         <img src={book.imgURL} />
         <p>{book.description}</p>
-        {book.status ? <p>yes</p> : <p>no</p>}
+        {book.status ? <p>Read</p> : <p>Unread</p>}
         {book.title && <Form book={book} setBook={setBook} />}
       </div>
     </>

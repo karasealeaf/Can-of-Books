@@ -12,7 +12,7 @@ export default function Home({ books, setBooks, deleteBook }) {
                 <h2>{book.title}</h2>
                 <img src={book.imgURL} />
               </Link>
-              {book.status ? <p>yes</p> : <p>no</p>}
+              {book.status ? <p>Read</p> : <p>Unread</p>}
               <button onClick={() => deleteBook(book._id)}>Delete Book</button>
             </div>
           );
