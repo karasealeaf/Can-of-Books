@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   async function getBooks() {
-    const API = `http://localhost:8080/books`;
+    const API = `https://can-of-books-nq10.onrender.com/books`;
     const res = await axios.get(API);
     setBooks(res.data);
   }
@@ -23,7 +23,7 @@ function App() {
   async function deleteBook(id) {
     const check = confirm("You sure about that?");
     if (check) {
-      const API = `http://localhost:8080/books/${id}`;
+      const API = `https://can-of-books-nq10.onrender.com/books/${id}`;
       await axios.delete(API);
       getBooks();
     } else {
@@ -37,7 +37,9 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home books={books} deleteBook={deleteBook} setBooks={setBooks} />}
+          element={
+            <Home books={books} deleteBook={deleteBook} setBooks={setBooks} />
+          }
         />
         <Route path="/book/:id" element={<Book />} />
       </Routes>
